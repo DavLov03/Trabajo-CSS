@@ -1,0 +1,128 @@
+/* Punto 1 */ 
+.Titulo1{
+    background-color: grey;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 10px;
+}
+/* Punto 2 */
+.Titulo2{
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.Parrafo{
+    text-decoration: underline;
+}
+
+.Cita{
+    padding: 5px;
+    background-color: rgb(233, 233, 233);
+    font-style: italic;
+}
+/* Punto 3 */
+.Caja1{
+    background-color: blue;
+    color: white;
+    width: 500px;
+    height: 50px;
+    border: 3px solid black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px black;
+
+}
+.Caja2{
+    background-color: yellow;
+    width: 500px;
+    height: 50px;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px 5px black;
+}
+/* Punto 4 */
+.Padre{
+    background-color: blue;
+    color: white;
+    width: 500px;
+    height: 50px;
+    border: 3px solid black;
+    padding: 5px;
+    position: relative;
+    top: 100%;
+}
+.Hijo{
+    background-color: red;
+    color: white;
+    width: 300px;
+    height: 50px;
+    border: 3px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+/* Punto 5 */
+@media screen and (max-width: 768px) {
+    .body{
+        background-color: aqua;
+    }
+    .Titulo1{
+        padding: 5px;
+    }
+    .Titulo2{
+        font-size: 20px;
+    }
+}
+/* Punto 6 */
+.Contenedor{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    align-items: center;
+    
+}
+
+.Contenedor div{
+    background-color: cornflowerblue;
+    text-align: center;
+    width: 150px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+/* Puntos 7 */
+.Animacion{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: 0.5s ease;
+}
+.Animacion:hover{
+    cursor: pointer;
+    background-color: aqua;
+}
+.Mover{
+    width: 100px;
+    height: 100px;
+    /*border-radius: 100%;*/
+    background-color: blue;
+    animation: mover 0.5s Infinite;
+}
+
+@keyframes mover{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(200px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
